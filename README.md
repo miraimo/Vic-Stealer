@@ -46,6 +46,7 @@
     <li><a href="#16-source-references">Source References</a></li>
     <li><a href="#disclaimer">Disclaimer</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contributors">Contributors</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -1229,8 +1230,38 @@ Contributions are welcome! Please read the [Contributing Guidelines](CONTRIBUTIN
 
 ---
 
+## Contributors
+
+Thanks to the contributors who have helped with this project:
+
+<table align="center">
+  <tr>
+    <td align="center" width="140px">
+      <a href="https://github.com/harbouli">
+        <img src="https://avatars.githubusercontent.com/u/76812739?v=4" width="80px;" alt="harbouli" style="border-radius:50%"/><br />
+        <sub><b>harbouli</b></sub>
+      </a>
+    </td>
+    <td align="center" width="140px">
+      <a href="https://github.com/miraimo">
+        <img src="https://avatars.githubusercontent.com/u/254464393?v=4" width="80px;" alt="miraimo" style="border-radius:50%"/><br />
+        <sub><b>miraimo</b></sub>
+      </a>
+    </td>
+    <td align="center" width="140px">
+      <a href="https://github.com/join010255">
+        <img src="https://avatars.githubusercontent.com/u/212217931?v=4" width="80px;" alt="join010255" style="border-radius:50%"/><br />
+        <sub><b>join010255</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE) with an Educational & Responsible Use Disclaimer. See the [LICENSE](LICENSE) file for complete details.
+
 
 
