@@ -1230,32 +1230,12 @@ Contributions are welcome! Please read the [Contributing Guidelines](CONTRIBUTIN
 
 ---
 
-## Contributors
+## 👥 Contributors
 
-Thanks to the contributors who have helped with this project:
+<a href="https://github.com/miraimo/Vic-Stealer/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=miraimo/Vic-Stealer" alt="Contributors" />
+</a>
 
-<table align="center">
-  <tr>
-    <td align="center" width="140px">
-      <a href="https://github.com/harbouli">
-        <img src="https://avatars.githubusercontent.com/u/76812739?v=4" width="80px;" alt="harbouli" style="border-radius:50%"/><br />
-        <sub><b>harbouli</b></sub>
-      </a>
-    </td>
-    <td align="center" width="140px">
-      <a href="https://github.com/miraimo">
-        <img src="https://avatars.githubusercontent.com/u/254464393?v=4" width="80px;" alt="miraimo" style="border-radius:50%"/><br />
-        <sub><b>miraimo</b></sub>
-      </a>
-    </td>
-    <td align="center" width="140px">
-      <a href="https://github.com/join010255">
-        <img src="https://avatars.githubusercontent.com/u/212217931?v=4" width="80px;" alt="join010255" style="border-radius:50%"/><br />
-        <sub><b>join010255</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
 
 ---
 
