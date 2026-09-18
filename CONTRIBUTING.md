@@ -34,7 +34,7 @@ We encourage contributions that improve the educational and defensive value of t
 1. Fork the repository to your GitHub account.
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/<your-username>/Vic-Stealer.git
+   git clone https://github.com/miraimo/Vic-Stealer.git
    cd Vic-Stealer
    ```
 
