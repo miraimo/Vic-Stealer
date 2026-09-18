@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="./README_assets/logo.png" width="120" alt="Project Logo">
+  <img src="./logo.png" width="120" alt="Project Logo">
 </p>
 
 <h1 align="center">VicSteal — Technical Malware Analysis Report</h1>
