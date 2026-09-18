@@ -1,3 +1,6 @@
+"""this file contains the configuration for the VicStealer malware. It includes settings for logging, anti-analysis measures, data extraction options, and application-specific configurations for stealing sensitive information from various applications."""
+
+
 config: dict[str, str] = {
   "logFileName": f"VicSteal-New-Log",
   "UACAdmin": True,

