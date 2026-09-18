@@ -45,6 +45,7 @@
     <li><a href="#15-analyst-summary">Analyst Summary</a></li>
     <li><a href="#16-source-references">Source References</a></li>
     <li><a href="#disclaimer">Disclaimer</a></li>
+    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -1222,7 +1223,14 @@ This document is intended for authorized malware analysis, incident response, de
 
 ---
 
+## Contributing
+
+Contributions are welcome! Please read the [Contributing Guidelines](CONTRIBUTING.md) for details on our code standards, ethical boundaries, and the pull request process.
+
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE) with an Educational & Responsible Use Disclaimer. See the [LICENSE](LICENSE) file for complete details.
+
 
