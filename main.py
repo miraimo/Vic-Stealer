@@ -40,7 +40,7 @@ def main() -> None:
     if config.get("antiVM") == True:
         AntiVm() # anti vm
     if config.get("antiCIS") == True:
-        anti_cis() # anti cis
+        anti_cis(config.get("BLACKLIST")) # anti cis
         
     if config.get("executionDelay") != "":
         time.sleep(float(config["executionDelay"]))
