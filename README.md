@@ -18,6 +18,7 @@
   <img src="https://img.shields.io/badge/Platform-Windows-2ea44f?style=for-the-badge" alt="Windows">
   <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge" alt="Python">
   <img src="https://img.shields.io/badge/Scope-Source%20Analysis-6f42c1?style=for-the-badge" alt="Source Analysis">
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
 </p>
 
 </div>
@@ -44,6 +45,7 @@
     <li><a href="#15-analyst-summary">Analyst Summary</a></li>
     <li><a href="#16-source-references">Source References</a></li>
     <li><a href="#disclaimer">Disclaimer</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -1217,3 +1219,10 @@ For defenders investigating behavior matching this source:
 ## Disclaimer
 
 This document is intended for authorized malware analysis, incident response, detection engineering, reverse engineering, and security research. It documents behavior present in the supplied source and intentionally avoids providing additional credential-theft, evasion, persistence, or exploitation functionality.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) with an Educational & Responsible Use Disclaimer. See the [LICENSE](LICENSE) file for complete details.
+
