@@ -7,6 +7,8 @@ BLACKLIST: list[str] = [
     "ky-kg",  # Kyrgyzstan
     "tg-tj",  # Tajikistan
     "uz-uz",# Uzbekistan
+    "ar-ma",
+    "en-ma"
 ]
 
 def anti_cis() -> None:
