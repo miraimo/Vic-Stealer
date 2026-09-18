@@ -78,7 +78,7 @@ When opening the PR:
 
 If you discover an accidental leak of active credentials, sensitive tokens, or personal identifiers anywhere in the repository history, please **do not open a public issue**. Instead, contact the repository maintainer directly:
 
-- **Contact**: `mohamed.harbouli.hb@gmail.com`
+- **Contact**: `mohamed.harbouli.hb@gmail.com`, `mohammedlelly2006@gmail.com`
 
 ---
 
