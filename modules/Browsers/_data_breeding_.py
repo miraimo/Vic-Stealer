@@ -9,7 +9,7 @@ class Login:
         self.password = password
 
     def __str__(self) -> str:
-        return f'\nBrowser Name: {self.browser_name} ( {self.profile} )\nurl: {self.url}\nusername: {self.username}\npassword: {self.password}\n'
+        return f'\nBrowser Name: {self.browser_name} \n {self.profile} )\nurl: {self.url}\nusername: {self.username}\npassword: {self.password}\n'
 
 class Cookies:
     def __init__(self, host_key: str, name:  str, path: str, cookies_value: bytes, expires_utc: str) -> None:
